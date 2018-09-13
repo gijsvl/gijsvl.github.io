@@ -1,5 +1,5 @@
 name: Flex
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 baseurl: ""
 url: "https://gijsvl.github.io"
