@@ -1,5 +1,25 @@
-name: Flex
-markdown: kramdown
-rouge: true
+title: GVL
+description: GVL Information Security Consultancy
+
+url: http://gijsvl.github.io/
 baseurl: ""
-url: "https://gijsvl.github.io"
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
+
+navigation:
+  - title: Home
+    url: /index.html
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+
+social:
+  github: gijsvl
+  twitter: gijsvanlaer
+  email: in@gijsvanlaer.be
