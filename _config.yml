@@ -12,12 +12,15 @@ plugins: [jekyll-paginate]
 paginate: 5
 
 navigation:
-  - title: Home
-    url: /index.html
-  - title: About
-    url: /about
+  - title: Services
+    url: /index.html#services
+  - title: Research
+    url: /index.html#research
+  - title: Contact
+    url: /index.html#contact
+  - title: Blog
+    url: /blog
 
 social:
   github: gijsvl
   twitter: gijsvanlaer
-  email: in@gijsvanlaer.be

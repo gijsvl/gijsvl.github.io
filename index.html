@@ -3,24 +3,38 @@ layout: default
 title: GVL Information Security
 ---
 
-<div class="home" id="home">
-  <h1 class="pageTitle">Recent Posts</h1>
-  <ul class="posts noList">
-    {% for post in paginator.posts %}
-      <li>
-        <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
-      </li>
-    {% endfor %}
+<div class="home" id="home" style="padding-left: 100px;">
+<div>
+	<p>
+	I'm a security consultant and research assistant. Currently, I'm pursuing a PhD in Cryptography at the Johns Hopkins University, but I'm also available for smaller freelance jobs. Below you can find a few of the services I can provide, but feel free to reach out if you have any questions.
+</p><p>
+	I have 4 years of development experience, I did a lot of studying (Mathematics, Information Security, and Cryptography), and for 2 years I was the CISO of the largest media company in the Benelux (De Persgroep), where I started an information security strategy almost from scratch.</p>
+</div>
+
+  <h1 class="pageTitle"><a id="services"></a>Services</h1>
+  <ul>
+  	<li>Infomation Security Advice</li>
+  	<li>Cryptographic Designs</li>
+  	<li>Secure Code Review</li>
+  	<li>Infomation Security Training/Awareness</li>
+  	<li>Penetration Testing</li>
+  	<li>Development (Golang, Java, Javascript, Python)</li>
   </ul>
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button__outline">Newer Posts</a> 
-    {% endif %}
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button__outline">Older Posts</a>
-    {% endif %}
-  </div>
+
+  <h1 class="pageTitle"><a id="research"></a>Research</h1>
+<p>
+	My research in cryptography is focused around zero knwowledge proofs, multi-party computation, and authentication protocols
+</p>
+
+  <h1 class="pageTitle"><a id="contact"></a>Contact</h1>
+  <div style="display: flex; align-content: flex-start;">
+  <div style="flex: 1">
+  <img src="../assets/img/profile.jpeg" width="80%" alt="profile" />
+</div><div style="flex: 3">
+	<ul class="noList">
+		<li>Gijs Van Laer, Information Security Consultant </li>
+		<li><a href="https://github.com/gijsvl">https://github.com/gijsvl</a></li>
+	</ul>
+</div>
+</div>
 </div>
