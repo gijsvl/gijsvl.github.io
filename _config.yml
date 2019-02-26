@@ -12,6 +12,8 @@ plugins: [jekyll-paginate]
 paginate: 5
 
 navigation:
+  - title: About
+    url: /index.html
   - title: Services
     url: /index.html#services
   - title: Research
@@ -24,3 +26,5 @@ navigation:
 social:
   github: gijsvl
   twitter: gijsvanlaer
+  linkedin: gijs-van-laer-b3325637
+  email: contact@gijsvanlaer.be
