@@ -16,10 +16,10 @@ navigation:
     url: /index.html
   - title: Services
     url: /index.html#services
-  - title: Research
-    url: /index.html#research
   - title: Contact
     url: /index.html#contact
+  - title: Research
+    url: /research
   - title: Blog
     url: /blog
 
