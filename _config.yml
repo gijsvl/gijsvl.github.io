@@ -11,6 +11,9 @@ highlighter: rouge
 plugins: [jekyll-paginate]
 paginate: 5
 
+logo: /assets/img/logo.png
+logo_inverse: /assets/img/inverse.png
+
 navigation:
   - title: About
     url: /index.html
