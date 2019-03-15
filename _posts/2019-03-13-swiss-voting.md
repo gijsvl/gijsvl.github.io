@@ -2,6 +2,7 @@
 layout: post
 title: MY TAKE ON THE SWISS E-VOTING SYSTEM
 date:   2019-03-13 12:00:00
+image: swiss-evoting.png
 description: 
 ---
 
