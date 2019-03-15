@@ -11,6 +11,7 @@ One of our developers struggled trying to use Apache Camel’s crypto library. A
 - Insecure defaults: without any parameters the encryption will be DES, using CBC mode and PKCS5 padding.
 - MAC-then-Encrypt: one should use Encrypt-then-MAC instead.
 - Same key for encryption and MAC
+
 ## INSECURE DEFAULTS
 The problem with insecure defaults is that I want to tell developers to trust the crypto, not to build it themselves. But use the built-in cryptographic functions in common libraries we generally trust, and extend the trust to the security of the library. With a bare minimum knowledge of cryptography they should be able to secure data both in transit as well as at rest. Unfortunately, the libraries expect the developer to define the proper algorithms, if the developer doesn’t, then the library will default to insecure ciphers. Therefore, all hope is lost.
 
@@ -30,4 +31,4 @@ A nice but theoretical overview of this problem can be found in this paper by Be
 Finally, Apache Camel requires one key as an input, this key is used for both the encryption algorithm as well as the MAC algorithm. Although, this is not necessarily a security issue, for some choices of encryption algorithms in combination with a certain MAC algorithm this could lead to vulnerabilities. Therefore, this is generally considered bad practice. Moreover, because the security proofs don’t account for key reuse in different algorithms, the algorithms cannot guarantee security.
 
 ## CONCLUSION
-Apache Camel’s crypto library should not be used. I’m currently working on a pull-request to fix these mistakes. Hopefully, I succeed in fixing most mistakes, such that people can keep on using the library, including the crypto part without worrying about its security.
+Apache Camel’s crypto library should not be used. If you would like to add encryption to your workflow, use a more vetted standard library such as BouncyCastle.
