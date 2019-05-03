@@ -1,6 +1,6 @@
 ---
 layout: post
-title: APACHE CAMEL’S NOT-SO-SECURE CRYPTO
+title: Apache Camel's Not-So-Secure Crypto
 date:   2017-10-12 12:00:00
 description: One of our developers struggled trying to use Apache Camel’s crypto library. As expected of a good developer he was worried about the security of the software he was writing. He figured out that some things are wrong with the way the library is doing encryption. Therefore, I took a look at the library myself, and figured they are making quite a few cryptographic mistakes that diminishes the security of the encrypted text.
 ---
